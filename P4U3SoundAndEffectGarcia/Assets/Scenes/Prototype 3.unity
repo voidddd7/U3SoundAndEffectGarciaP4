@@ -216,6 +216,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &208374514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208374516}
+  - component: {fileID: 208374515}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &208374515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208374514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b06bc0d5557c64dad1b5d2a1dce75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &208374516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208374514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3723254, y: 6.6132545, z: -8.424501}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +758,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1f41408250d5f44ad38747afcd73d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 8647775370059200498, guid: 43cfff8fd3763f449b567d4866b3e4e4, type: 3}
+  - {fileID: 571595295804259805, guid: 0b605228b6679674c8d5c22305b916e4, type: 3}
+  - {fileID: 1351663396128256307, guid: 74dbf4e5342dc9f4ab48d6174325cf1e, type: 3}
+  - {fileID: 6831274772399655268, guid: 752fbe5df0f66624c8a4a5a88027fbf0, type: 3}
   obstaclePrefab: {fileID: 8647775370059200498, guid: 43cfff8fd3763f449b567d4866b3e4e4, type: 3}
 --- !u!1001 &1961222253
 PrefabInstance:
@@ -866,6 +916,9 @@ MonoBehaviour:
   gravityModifier: 1.5
   isOnGround: 1
   gameOver: 0
+  doubleJumpUsed: 0
+  doubleJumpForce: 400
+  doubleSpeed: 0
 --- !u!4 &1961222259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
@@ -1092,3 +1145,4 @@ SceneRoots:
   - {fileID: 835818921}
   - {fileID: 1961222253}
   - {fileID: 1794745891}
+  - {fileID: 208374516}
